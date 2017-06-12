@@ -1,0 +1,4 @@
+simply tells the makefile to compile the .proto files in this folder one by one,
+as they produce GO code in different packages
+
+Otherwise the protoc-gen-go plugin fails with "error:inconsistent package names:"

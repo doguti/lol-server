@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package lol-server.v1;
+
+import "api/v1/summoner.proto";
+
+import "google/api/annotations.proto";
+
+service Server {
+    rpc getSummoner(SummonerRequest) returns (Summoner) {
+        option (google.api.http) = { get: "/v1/summoner/{id=*}" body: "" };
+    }
+}

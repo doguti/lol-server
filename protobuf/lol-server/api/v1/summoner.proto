@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package lol-server.v1;
+
+
+message Summoner{
+    int32  ProfileIconId = 1;
+    string Name = 2;
+    int32  SummonerLevel = 3;
+    int32  RevisionDate = 4;
+    int32  ID = 5;
+    int32  AccountID = 6;
+}
+
+
+message SummonerRequest{
+    int32 Id = 1;
+}

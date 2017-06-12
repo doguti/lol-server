@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package lol-server.v1
+
+option csharp_namespace = "LOL.Server.V1";
+option go_package = "lol-server/api/v1;server";
+option java_multiple_files = true;
+option java_outer_classname = "ResultSet";
+option java_package = "com.lol.server.v1";
+
+message ResultSet {
+
+
+    ResultSetStats stats = 2;
+}
+
+
+message ResultSetStats {
+    string Result = 1;
+}
+
